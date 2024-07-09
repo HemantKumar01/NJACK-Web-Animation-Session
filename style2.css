@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,600;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  max-width: 100vw;
+  font-family: Poppins, sans-serif;
+  background-color: black;
+
+  color: white;
+}
+html {
+  height: 100%;
+  z-index: 100;
+  position: relative;
+}
+
+.ground {
+  position: fixed;
+  width: 100%;
+  top: 80vh;
+  left: 0;
+  z-index: 100;
+  filter: brightness(0.9) contrast(1.9) drop-shadow(0 -10px 10px white);
+}
+.moon {
+  position: fixed;
+  width: 300px;
+  right: 80px;
+  top: 100px;
+  z-index: 90;
+  filter: drop-shadow(0 0 30px white);
+}
+.jupiter {
+  position: fixed;
+  width: 200px;
+  left: 50%;
+  top: 20px;
+  z-index: 50;
+  filter: drop-shadow(0 0 30px rgb(231, 194, 108));
+}
+.saturn {
+  position: fixed;
+  width: 150px;
+  left: 200px;
+  top: 50px;
+  z-index: 60;
+  filter: drop-shadow(0 0 30px rgb(231, 194, 108));
+}
+.head {
+  position: fixed;
+  width: 100%;
+  top: 50vh;
+  display: grid;
+  place-content: center;
+  font-size: 5rem;
+  letter-spacing: 0.5ch;
+  font-weight: 100;
+  z-index: 70;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 70vh;
+  color: white;
+  background-color: black;
+  background: url("media/stars.png");
+  overflow: hidden !important;
+}
+.para {
+  position: relative;
+  z-index: 300;
+  background-color: black;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding: 3em 5em;
+  padding-top: 10rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}

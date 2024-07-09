@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anim 2</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">Hemant Kumar</div>
+      <img src="media/ground.png" alt="" class="ground" />
+      <img src="media/moon.png" alt="" class="moon" />
+      <img src="media/jupiter.png" alt="" class="jupiter" />
+      <img src="media/saturn.png" alt="" class="saturn" />
+    </div>
+
+    <div class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+      dignissimos atque porro vero maiores nostrum sapiente possimus placeat
+      officia doloremque iusto, quibusdam esse praesentium provident distinctio
+      inventore culpa eum quaerat. Ex perferendis tempore mollitia. Ratione,
+      veniam quod cum itaque suscipit autem qui, saepe, ex harum officia
+      consectetur possimus beatae voluptatem corrupti? Unde consectetur
+      necessitatibus sunt fugit ducimus labore quis vel? inventore culpa eum
+      quaerat. Ex perferendis tempore mollitia. Ratione, veniam quod cum itaque
+      suscipit autem qui, saepe, ex harum officia consectetur possimus beatae
+      voluptatem corrupti? Unde consectetur necessitatibus sunt fugit ducimus
+      labore quis vel? inventore culpa eum quaerat. Ex perferendis tempore
+      mollitia. Ratione, veniam quod cum itaque suscipit autem qui, saepe, ex
+      harum officia consectetur possimus beatae voluptatem corrupti? Unde
+      consectetur necessitatibus sunt fugit ducimus labore quis vel? inventore
+      culpa eum quaerat. Ex perferendis tempore mollitia. Ratione, veniam quod
+      cum itaque suscipit autem qui, saepe, ex harum officia consectetur
+      possimus beatae voluptatem corrupti? Unde consectetur necessitatibus sunt
+      fugit ducimus labore quis vel?
+    </div>
+
+    <script>
+      var text = document.querySelector(".head");
+      var moon = document.querySelector(".moon");
+      var saturn = document.querySelector(".saturn");
+      var jupiter = document.querySelector(".jupiter");
+      var ground = document.querySelector(".ground");
+      window.onscroll = () => {
+        var value = window.scrollY;
+        ground.style.top = document.body.clientHeight * 0.8 - value + "px";
+
+        moon.style.top = 100 - value * 0.3 + "px";
+        moon.style.right = 80 + value * 0.3 + "px";
+
+        text.style.top = document.body.clientHeight * 0.5 - value * 0.6 + "px";
+
+        jupiter.style.left =
+          document.body.clientWidth * 0.5 - value * 0.3 + "px";
+
+        saturn.style.top = 50 + value * 0.1 + "px";
+        saturn.style.left = 200 - value * 0.1 + "px";
+
+        moon.style.top = 100 - value * 0.6 + "px";
+        moon.style.right = 80 + value * 0.3 + "px";
+      };
+    </script>
+  </body>
+</html>
